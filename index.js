@@ -68,32 +68,32 @@ const productsData = {
     'rendali': {
         title: 'Vara Rendali',
         category: 'Varas de Carbono',
-        desc: 'A Rendali é uma vara projetada para quem busca o máximo de conforto em pescarias prolongadas. Seu cabo em cortiça premium bipartido distribui o peso de forma equilibrada. O blank de carbono composto oferece excelente flexibilidade para arremessos a longa distância, mantendo a força na briga.',
+        desc: 'Fabricada em fibra de vidro, com a ponta da vara feita em fibra de vidro maciça. Proporciona extrema resistência mecânica, durabilidade e flexibilidade excelente para pescarias com iscas artificiais e peixes de grande porte.',
         image: 'assets/product_rod.png',
         specs: {
-            'Blank': 'Carbono Composto de alta modulação',
+            'Blank': 'Fibra de Vidro (Ponta Maciça)',
+            'Estrutura': 'Gomo Longo',
             'Comprimento': '6\'0" (1.83m)',
-            'Ação': 'Média-Rápida',
-            'Libragem': '8-14lb',
+            'Libragem': '15-30lb',
             'Cabo': 'Cortiça Premium Bipartida',
-            'Uso indicado': 'Iscas artificiais de superfície e meia-água'
+            'Ação': 'Média-Lenta'
         },
         waText: 'Olá! Gostaria de consultar os preços e prazos de entrega da Vara Rendali.'
     },
     'starlure': {
         title: 'Vara Starlure',
         category: 'Varas de Carbono',
-        desc: 'Uma obra-prima para a pesca de precisão (Finesse). A Starlure possui blank de carbono maciço flexível, tornando-a extremamente resistente a quebras, mas com ponta sensível para o trabalho correto de iscas artificiais leves. Indicada para tucunarés amarelos, robalos peva e tilápias.',
+        desc: 'Desenvolvida com a tecnologia de fibra de Carbono IM7. Combina extrema leveza com alta sensibilidade pontual para arremessos cirúrgicos e fisgadas precisas.',
         image: 'assets/product_rod.png',
         specs: {
-            'Blank': 'Carbono Sólido Flexível',
+            'Blank': 'Fibra de Carbono IM7',
             'Comprimento': '5\'6" (1.68m)',
-            'Ação': 'Moderada',
-            'Libragem': '6-12lb',
-            'Peso da Isca': '3g a 12g',
-            'Peso da Vara': 'Super leve (finesse)'
+            'Ação': 'Rápida (Fast)',
+            'Libragem': '8-17lb',
+            'Peso da Isca': '6g a 18g',
+            'Peso da Vara': 'Super leve (Alta Sensibilidade)'
         },
-        waText: 'Olá! Gostaria de mais especificações técnicas sobre a Vara Starlure para pesca ultra light.'
+        waText: 'Olá! Gostaria de mais especificações técnicas sobre a Vara Starlure IM7.'
     },
     'top-shad': {
         title: 'TR Top Shad',

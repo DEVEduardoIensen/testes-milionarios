@@ -276,10 +276,10 @@ ul {
 
 .hero-bg {
     position: absolute;
-    top: 0;
+    top: -30px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 60px);
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -1105,4 +1105,71 @@ ul {
     .contact-form-wrapper {
         padding: 2rem;
     }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 5px;
+    border: 2px solid #09090b;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-hover);
+}
+
+/* Hero Divider Styling */
+.hero-divider {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 5;
+}
+.hero-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 45px;
+}
+.hero-divider path {
+    fill: var(--color-bg-base);
+}
+
+/* Premium Product Card Glowing Hover Effects */
+.product-card {
+    position: relative;
+}
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+.product-card:hover::before {
+    opacity: 0.15;
+    filter: blur(10px);
+}
+.product-card:hover {
+    box-shadow: 0 10px 40px rgba(224, 83, 38, 0.15), var(--shadow-md);
+}
+
+/* Smooth active state transitions */
+.btn-primary:active, .btn-secondary:active {
+    transform: scale(0.98);
 }
