@@ -125,13 +125,13 @@
     <section class="products-section container" id="produtos">
         <div class="section-header text-center">
             <span class="section-tag glow-text">CATÁLOGO EXCLUSIVO</span>
-            <h2 class="section-title">Equipamentos de <span class="gradient-text">Elite</span></h2>
-            <p class="section-subtitle">Filtre por categoria e descubra as especificações completas das nossas linhas, varas de pesca e iscas artificiais.</p>
+            <h2 class="section-title">Destaques do <span class="gradient-text">Catálogo</span></h2>
+            <p class="section-subtitle">Esta é uma seleção de itens recomendados. Filtre abaixo e clique para ver especificações completas ou baixe a versão completa em PDF.</p>
         </div>
 
         <!-- Filter Controls -->
         <div class="filter-controls">
-            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn active" data-filter="all">Todos os Destaques</button>
             <button class="filter-btn" data-filter="linhas">Linhas</button>
             <button class="filter-btn" data-filter="varas">Varas de Carbono</button>
             <button class="filter-btn" data-filter="iscas">Iscas Soft</button>
@@ -293,7 +293,45 @@
                     </button>
                 </div>
             </div>
-            
+        </div> <!-- Close products-grid -->
+
+        <!-- Linhas Carousel Wrapper -->
+        <div class="carousel-wrapper" id="linhas-carousel-wrapper" style="display: none;">
+            <button class="carousel-arrow prev" onclick="scrollCarousel('linhas-carousel', -1)" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-track" id="linhas-carousel">
+                <!-- Dynamic cards populated by JavaScript -->
+            </div>
+            <button class="carousel-arrow next" onclick="scrollCarousel('linhas-carousel', 1)" aria-label="Próximo">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+        </div>
+
+        <!-- Varas Carousel Wrapper -->
+        <div class="carousel-wrapper" id="varas-carousel-wrapper" style="display: none;">
+            <button class="carousel-arrow prev" onclick="scrollCarousel('varas-carousel', -1)" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-track" id="varas-carousel">
+                <!-- Dynamic cards populated by JavaScript -->
+            </div>
+            <button class="carousel-arrow next" onclick="scrollCarousel('varas-carousel', 1)" aria-label="Próximo">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+        </div>
+
+        <!-- Iscas Carousel Wrapper -->
+        <div class="carousel-wrapper" id="iscas-carousel-wrapper" style="display: none;">
+            <button class="carousel-arrow prev" onclick="scrollCarousel('iscas-carousel', -1)" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-track" id="iscas-carousel">
+                <!-- Dynamic cards populated by JavaScript -->
+            </div>
+            <button class="carousel-arrow next" onclick="scrollCarousel('iscas-carousel', 1)" aria-label="Próximo">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
         </div>
     </section>
 
@@ -443,37 +481,61 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer-top-line"></div>
         <div class="container footer-grid">
             <div class="footer-brand">
-                <a href="#home" class="logo-area">
+                <a href="index.html#home" class="logo-area">
                     <span class="logo-icon">TR</span>
                     <span class="logo-text">FISHING</span>
                 </a>
-                <p class="footer-desc">Paixão, respeito e qualidade em cada arremesso. A marca feita de pescador para pescador.</p>
+                <p class="footer-desc">Paixão, respeito e qualidade em cada arremesso. Equipamentos de pesca esportiva feitos de pescador para pescador.</p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/5542991211496" target="_blank" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/tr_fishing_oficial" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/trfishing" target="_blank" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
             </div>
             
             <div class="footer-links">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#quem-somos">Quem Somos</a></li>
-                    <li><a href="#contato">Fale Conosco</a></li>
+                    <li><a href="index.html#home">Início</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="index.html#quem-somos">Quem Somos</a></li>
+                    <li><a href="index.html#contato">Fale Conosco</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
-                <h4>Legal</h4>
+                <h4>Equipamentos</h4>
                 <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Políticas de Cookies</a></li>
+                    <li><a href="index.html#produtos" onclick="filterCatalog('linhas')">Linhas de Pesca</a></li>
+                    <li><a href="index.html#produtos" onclick="filterCatalog('varas')">Varas de Carbono</a></li>
+                    <li><a href="index.html#produtos" onclick="filterCatalog('iscas')">Iscas Soft</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="politica-privacidade.html">Privacidade</a></li>
+                    <li><a href="politica-cookies.html">Cookies</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="footer-bottom text-center">
+        <div class="footer-bottom">
             <p>&copy; 2026 TR Fishing. Todos os direitos reservados. Projetado para máxima performance.</p>
+            <button class="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Voltar ao topo">
+                Voltar ao topo
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+            </button>
         </div>
     </footer>
 
